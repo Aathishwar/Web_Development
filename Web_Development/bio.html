@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>About</title>
+</head>
+
+<body style="background-color: black;">
+    <header class="container">
+        <div class="page-header">
+            <div class="PORTFOLIO">
+                <a href="#">PORTFOLIO</a>
+            </div>
+            <input type="checkbox" id="click">
+
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </label>
+        </div>
+    </header>
+    <section class="about">
+        <section id="About">
+            <div class="row">
+                <div class="About-col-1">
+                    <img src="3.jpg" alt="Profile Image">
+                </div>
+                <span style="padding: 10px;"></span>
+                <div class="About-col-2">
+                    <h1 class="sub-tittle">About Me</h1>
+                    <div id="output">
+                        <p id="textToPrint">
+                            Hello! I'm Aathishwar V, currently a third-year college student pursuing CSE(AIML) at
+                            KPRIET.
+                            From a young age, I've been captivated by the world of hacking and cybersecurity.
+                            My passion for coding has led me to explore various programming languages.
+                            My academic journey is not just about grades;
+                            it's about the exploration of possibilities and the application of my skills
+                            to create something meaningful.
+                            I am excited to explore the future of technology.
+                        </p>
+                    </div>
+                    </span>
+                    <div class="tab-tittles">
+                        <p class="tab-links1 active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links1" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links1" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming</span><br>JAVA<br>PYTHON<br>C Programming</li>
+                            <li><span>Web Devlopement</span><br>Web Page Devlopement</li>
+                            <li><span>Hardwares</span><br>Raspberry PI</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>Designed a personal portfolio website</li>
+                            <li>Have hands-on experience in using Raspberry PI</li>
+                            <li>Eager to learn more about Cyber Security and Web Devlopement</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-Current</span><br>KPR Institute of Engineering and Technology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </section>
+    <footer style="text-align: right;">
+        <marquee behavior="scroll" direction="left">KPRIET || AIML || 22AM002 </marquee>
+    </footer>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links1");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            var currentTab = document.getElementById(tabname);
+            var currentLink = document.querySelector("[onclick=\"opentab('" + tabname + "')\"]");
+
+            currentLink.classList.add("active-link");
+            currentTab.classList.add("active-tab");
+        }
+    </script>
+</body>
+
+</html>
