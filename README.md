@@ -6,9 +6,8 @@ Welcome to the official source code of my personal portfolio website. Built with
 
 ## 🔥 Live Preview
 
-🚀 [View Portfolio Live](#)  
-*(Add your live deployment link here)*
-
+🚀 [View Portfolio Live](https://aathishwar.github.io/Web_Development/Portfolio/) 
+https://aathishwar.github.io/Web_Development/Portfolio/
 ---
 
 ## ✨ Features
